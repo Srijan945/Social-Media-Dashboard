@@ -151,6 +151,51 @@ h2{
     color: hsl(228, 12%, 44%);
 }
 
+/*****************************Today Stats ******************************************/
+.stat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.stat-card{
+    text-align: center;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 0.3125rem;
+    margin: 0.625rem 0;
+    padding: 1.25rem;
+}
+.stat-card > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.v-l{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+.v-l-count{
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(230, 17%, 14%);
+}
+.row-1{
+    margin-bottom: 1.5625rem;
+}
+.percentage > img{
+    position: relative;
+    bottom: 0.125rem;
+}
+.percentage span{
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+}
+.percentage .red{
+    color: hsl(356, 69%, 56%);
+}
 /* For Medium Devices */
 @media only screen and (min-width: 600px){
     
@@ -166,9 +211,6 @@ h2{
     .col-md-10{ width: 83.33%;}
     .col-md-11{ width: 91.63%;}
     .col-md-12{ width: 100%;}
-    .card{
-        margin: 0.625rem;
-    }
 }
 
 
