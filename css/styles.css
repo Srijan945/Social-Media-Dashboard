@@ -5,6 +5,7 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 10%,hsl(0, 0%, 100%) 10%);
+    background-repeat: no-repeat;
     padding: 2% 8%;
 }
 /********************************* Grid View  *************************/
@@ -85,8 +86,7 @@ div.toggle-mode{
 .cards{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-wrap: wrap;    
     margin-bottom: 0.625rem;
 }
 .card{
@@ -122,6 +122,7 @@ div.toggle-mode{
 }
 .instagram{
     padding: 1.25rem;
+    border-radius: 0.3125rem;
     background-color: hsl(227, 47%, 96%);
 }
 .youtube{
@@ -221,6 +222,7 @@ h2{
     .col-md-3{ width: 24.99%;}
     .col-md-4{ width: 33.32%;}
     .col-md-5{ width: 41.65%;}
+    .col-md-57{ width: 47.481%;}
     .col-md-6{ width: 49.98%;}
     .col-md-7{ width: 58.31%;}
     .col-md-8{ width: 66.64%;}
@@ -241,15 +243,23 @@ h2{
     #dark-mode{
         margin-right: 1rem;
     }
-
+    .cards{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .stat{
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 
 /* For Large Devies */
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 1000px){
     
     .col-lg-1{ width: 8.33%;}
     .col-lg-2{ width: 16.66%;}
+    .col-lg-25{ width: 23.324%;}
     .col-lg-3{ width: 24.99%;}
     .col-lg-4{ width: 33.32%;}
     .col-lg-5{ width: 41.65%;}
@@ -264,19 +274,19 @@ h2{
         display: none;
     }
     body{
-        background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 25%,hsl(0, 0%, 100%) 25%);
+        background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 35%,hsl(0, 0%, 100%) 35%);
         padding: 3% 8%;
     }
 }
-
 .attribution {
-    font-size: 0.8125rem;
     text-align: center;
+    font-size: 0.8125rem;
     color:hsl(228, 12%, 44%);
     font-weight: 700;
     margin-top: 1.25rem;
 }
 .attribution a{
+    font-size: 1rem;
     text-decoration: none;
     color:hsl(228, 12%, 44%);
 }
