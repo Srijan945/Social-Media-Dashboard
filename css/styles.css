@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 15%,hsl(0, 0%, 100%) 15%);
+    padding: 2% 8%;
+}
+/********************************* Grid View  *************************/
+
+/******************************** For Small Devices *******************/
+.col-sm-1{ width: 8.33%;}
+.col-sm-2{ width: 16.66%;}
+.col-sm-3{ width: 24.99%;}
+.col-sm-4{ width: 33.32%;}
+.col-sm-5{ width: 41.65%;}
+.col-sm-6{ width: 49.98%;}
+.col-sm-7{ width: 58.31%;}
+.col-sm-8{ width: 66.64%;}
+.col-sm-9{ width: 74.97%;}
+.col-sm-10{ width: 83.33%;}
+.col-sm-11{ width: 91.63%;}
+.col-sm-12{ width: 100%;}
+
+/******************************** header *****************************/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 1.25rem;
+}
+h1{
+    font-size: 1.56rem; /*25 pixel */
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.header-item p{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+#followers{
+    margin-top: 0.3125rem;
+    margin-bottom: 1.125rem;
+}
+#dark-mode{
+    margin: 1.125rem 0;
+}
+hr{
+    margin: 0;
+}
+.header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;   
+}
+.toggle-bar{
+    width: 3.125rem;
+    height: 1.5625rem;
+    border-radius: 0.8125rem;
+    background-color: hsl(230, 22%, 74%);
+    position: relative;
+}
+.toggle-bar div{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    background-color: white;
+    position: absolute;
+    right: 0.1875rem;
+    top: 0.125rem;
+}
+
+
+/****************************** Social Media Cards ********************************/
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 0.625rem;
+}
+.card{
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 0.3125rem;
+    text-align: center;
+    margin: 0.625rem 0;
+}
+.username{
+    position: relative;
+    bottom: 0.25rem;
+    left: 0.1875rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+.facebook{
+    padding: 1.25rem;
+    border-top: 0.25rem solid hsl(208, 92%, 53%);
+}
+.twitter{
+    padding: 1.25rem;
+    border-top: 0.25rem solid hsl(203, 89%, 53%);
+}
+.instagram-wrapper{
+    background-image: -webkit-linear-gradient(0deg,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    padding-top: 0.25rem;
+}
+.instagram{
+    padding: 1.25rem;
+    background-color: hsl(227, 47%, 96%);
+}
+.youtube{
+    padding: 1.25rem;
+    border-top: 0.25rem solid hsl(348, 97%, 39%); 
+}
+.followers-count{
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(230, 17%, 14%);
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.text{
+    margin: 0 0 1rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0.1875rem;
+    color: hsl(228, 12%, 44%);
+}
+.daily-stat{
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+}
+.icon-up-down{
+    position: relative;
+    bottom: 0.125rem;
+    
+}
+.red{
+    color: hsl(356, 69%, 56%);
+}
+
+/******************************Overview Today *********************************/
+h2{
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+/* For Medium Devices */
+@media only screen and (min-width: 600px){
+    
+    .col-md-1{ width: 8.33%;}
+    .col-md-2{ width: 16.66%;}
+    .col-md-3{ width: 24.99%;}
+    .col-md-4{ width: 33.32%;}
+    .col-md-5{ width: 41.65%;}
+    .col-md-6{ width: 49.98%;}
+    .col-md-7{ width: 58.31%;}
+    .col-md-8{ width: 66.64%;}
+    .col-md-9{ width: 74.97%;}
+    .col-md-10{ width: 83.33%;}
+    .col-md-11{ width: 91.63%;}
+    .col-md-12{ width: 100%;}
+    .card{
+        margin: 0.625rem;
+    }
+}
+
+
+/* For Large Devies */
+@media only screen and (min-width: 768px){
+    
+    .col-lg-1{ width: 8.33%;}
+    .col-lg-2{ width: 16.66%;}
+    .col-lg-3{ width: 24.99%;}
+    .col-lg-4{ width: 33.32%;}
+    .col-lg-5{ width: 41.65%;}
+    .col-lg-6{ width: 49.98%;}
+    .col-lg-7{ width: 58.31%;}
+    .col-lg-8{ width: 66.64%;}
+    .col-lg-9{ width: 74.97%;}
+    .col-lg-10{ width: 83.33%;}
+    .col-lg-11{ width: 91.63%;}
+    .col-lg-12{ width: 100%;}
+    header{
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
