@@ -1,10 +1,41 @@
+:root{
+
+    /**********************Common Colors *********************/
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --youTube: hsl(348, 97%, 39%);
+}
+.light{
+
+     /*********************Light theme Colors ******************/
+     --bg: hsl(0,0%,100%);
+     --top-bg-pattern: hsl(225, 100%, 98%);
+     --card-bg: hsl(227, 47%, 96%);
+     --text: hsl(228, 12%, 44%);
+     --dark-text: hsl(230, 17%, 14%);
+     --card-hover: hsl(227, 47%, 90%);
+}
+.dark{
+
+    /******************** Dark theme Colors ******************/
+    --bg: hsl(230, 17%, 14%);
+    --top-bg-pattern: hsl(232, 19%, 15%);
+    --card-bg: hsl(228, 28%, 20%);
+    --text: hsl(228, 34%, 66%);
+    --dark-text: hsl(0,0%,100%);
+    --card-hover: hsl(228, 28%, 27%);
+}
 *{
     box-sizing: border-box;
+    transition: background-color 0.6s ease, color 1s ease;
+}
+html{
+    min-height: 100%;
 }
 body{
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 10%,hsl(0, 0%, 100%) 10%);
+    background-image: -webkit-linear-gradient(var(--top-bg-pattern) 10%, var(--bg) 10%);
     background-repeat: no-repeat;
     padding: 2% 8%;
 }
@@ -35,11 +66,12 @@ h1{
     font-size: 1.56rem; /*25 pixel */
     font-weight: 700;
     margin-bottom: 0;
+    color: var(--dark-text);
 }
 .header-item p{
     font-size: 0.875rem;
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--text);
 }
 #followers{
     margin-top: 0.3125rem;
@@ -64,6 +96,9 @@ hr{
     background-color: rgba(174, 179, 203,1);
     position: relative;
 }
+.toggle-bar-color{
+    background-image: -webkit-linear-gradient(0deg,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
 .toggle-bar:hover{
     background-image: -webkit-linear-gradient(0deg,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     cursor: pointer;
@@ -72,7 +107,7 @@ hr{
     width: 1.25rem;
     height: 1.25rem;
     border-radius: 0.625rem;
-    background-color: white;
+    background-color: var(--bg);
     position: absolute;
     right: 0.1875rem;
     top: 0.125rem;  
@@ -90,13 +125,13 @@ div.toggle-mode{
     margin-bottom: 0.625rem;
 }
 .card{
-    background-color: hsl(227, 47%, 96%);
+    background-color: var(--card-bg);
     border-radius: 0.3125rem;
     text-align: center;
     margin: 0.625rem 0;
 }
 .card:hover, .instagram:hover{
-    background-color: hsl(227, 47%, 90%);
+    background-color: var(--card-hover);
     transition: background-color 0.5s;
     cursor: pointer;
 }
@@ -106,15 +141,15 @@ div.toggle-mode{
     left: 0.1875rem;
     font-size: 0.875rem;
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--text);
 }
 .facebook{
     padding: 1.25rem;
-    border-top: 0.25rem solid hsl(208, 92%, 53%);
+    border-top: 0.25rem solid var(--facebook);
 }
 .twitter{
     padding: 1.25rem;
-    border-top: 0.25rem solid hsl(203, 89%, 53%);
+    border-top: 0.25rem solid var(--twitter);
 }
 .instagram-wrapper{
     background-image: -webkit-linear-gradient(0deg,hsl(37, 97%, 70%),hsl(329, 70%, 58%));
@@ -123,16 +158,16 @@ div.toggle-mode{
 .instagram{
     padding: 1.25rem;
     border-radius: 0.3125rem;
-    background-color: hsl(227, 47%, 96%);
+    background-color: var(--card-bg);
 }
 .youtube{
     padding: 1.25rem;
-    border-top: 0.25rem solid hsl(348, 97%, 39%); 
+    border-top: 0.25rem solid var(--youTube); 
 }
 .followers-count{
     font-size: 3rem;
     font-weight: 700;
-    color: hsl(230, 17%, 14%);
+    color: var(--dark-text);
     margin-top: 1rem;
     margin-bottom: 0;
 }
@@ -141,7 +176,7 @@ div.toggle-mode{
     font-size: 0.8125rem;
     font-weight: 400;
     letter-spacing: 0.1875rem;
-    color: hsl(228, 12%, 44%);
+    color: var(--text);
 }
 .daily-stat{
     font-size: 0.8125rem;
@@ -161,7 +196,7 @@ div.toggle-mode{
 h2{
     font-size: 1.56rem;
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--text);
 }
 
 /*****************************Today Stats ******************************************/
@@ -173,13 +208,13 @@ h2{
 }
 .stat-card{
     text-align: center;
-    background-color: hsl(227, 47%, 96%);
+    background-color: var(--card-bg);
     border-radius: 0.3125rem;
     margin: 0.625rem 0;
     padding: 1.25rem;
 }
 .stat-card:hover{
-    background-color: hsl(227, 47%, 90%);
+    background-color: var(--card-hover);
     transition: background-color 0.5s;
     cursor: pointer;
 }
@@ -192,12 +227,12 @@ h2{
 .v-l{
     font-size: 1rem;
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--text);
 }
 .v-l-count{
     font-size: 2rem;
     font-weight: 700;
-    color: hsl(230, 17%, 14%);
+    color: var(--dark-text);
 }
 .row-1{
     margin-bottom: 1.5625rem;
@@ -234,7 +269,7 @@ h2{
         display: none;
     }
     body{
-        background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 15%,hsl(0, 0%, 100%) 15%);
+        background-image: -webkit-linear-gradient(var(--top-bg-pattern) 15%,var(--bg) 15%);
         padding: 3% 8%;
     }
     .header-flex{
@@ -274,23 +309,23 @@ h2{
         display: none;
     }
     body{
-        background-image: -webkit-linear-gradient(hsl(225, 100%, 98%) 35%,hsl(0, 0%, 100%) 35%);
+        background-image: -webkit-linear-gradient(var(--top-bg-pattern) 32%,var(--bg) 32%);
         padding: 3% 8%;
     }
 }
 .attribution {
     text-align: center;
     font-size: 0.8125rem;
-    color:hsl(228, 12%, 44%);
+    color:var(--text);
     font-weight: 700;
     margin-top: 1.25rem;
 }
 .attribution a{
     font-size: 1rem;
     text-decoration: none;
-    color:hsl(228, 12%, 44%);
+    color:var(--text);
 }
 a:hover {
     transition: color 0.5s;
-    color: hsl(228, 45%, 44%);
+    color: var(--dark-text);
 }
