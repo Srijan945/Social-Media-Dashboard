@@ -25,10 +25,9 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-### Links
+### Link
 
-- Solution URL: [Add solution URL here](https://github.com/Srijan945/Social-Media-Dashboard.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [URL](https://srijan945.github.io/Social-Media-Dashboard/)
 
 
 ## Built with
